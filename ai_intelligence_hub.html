@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Intelligence Hub</title>
+  <!-- Tailwind CDN for quick styling -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+</head>
+<body class="bg-gray-50 text-gray-900">
+  <!-- Header -->
+  <header class="bg-indigo-600 text-white py-6 shadow-md">
+    <h1 class="text-3xl font-semibold text-center">AI Intelligence Hub</h1>
+    <p class="text-center mt-2">Curated weekly sources for AI research, product, growth & monetization</p>
+    <p class="text-center mt-1 text-sm">Last updated: <span id="lastUpdated" class="font-semibold"></span></p>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-5xl mx-auto px-4 py-8 space-y-10">
+    <!-- Research & Open Source Section -->
+    <section id="research">
+      <h2 class="text-2xl font-bold mb-4">Research & Open Source</h2>
+      <ul class="list-disc list-inside space-y-1">
+        <li><a href="https://arxiv.org" target="_blank" class="text-indigo-700 hover:underline">arXiv – AI categories</a></li>
+        <li><a href="https://ar5iv.org" target="_blank" class="text-indigo-700 hover:underline">ar5iv – Lightweight arXiv reader</a></li>
+        <li><a href="https://paperswithcode.com" target="_blank" class="text-indigo-700 hover:underline">Papers with Code – SOTA & Trending</a></li>
+        <li><a href="https://huggingface.co/spaces" target="_blank" class="text-indigo-700 hover:underline">Hugging Face Spaces – Demo Gallery</a></li>
+        <li><a href="https://github.com/trending" target="_blank" class="text-indigo-700 hover:underline">GitHub Trending – AI repos</a></li>
+      </ul>
+    </section>
+
+    <!-- Company Blogs Section -->
+    <section id="company-blogs">
+      <h2 class="text-2xl font-bold mb-4">Company Research Blogs</h2>
+      <ul class="list-disc list-inside space-y-1">
+        <li><a href="https://openai.com/research" target="_blank" class="text-indigo-700 hover:underline">OpenAI Research</a></li>
+        <li><a href="https://www.deepmind.com/research" target="_blank" class="text-indigo-700 hover:underline">DeepMind</a></li>
+        <li><a href="https://www.anthropic.com/index/research" target="_blank" class="text-indigo-700 hover:underline">Anthropic</a></li>
+        <li><a href="https://ai.facebook.com/blog" target="_blank" class="text-indigo-700 hover:underline">Meta AI Blog</a></li>
+        <li><a href="https://research.google" target="_blank" class="text-indigo-700 hover:underline">Google Research</a></li>
+        <li><a href="https://developer.nvidia.com/blog" target="_blank" class="text-indigo-700 hover:underline">NVIDIA Technical Blog</a></li>
+      </ul>
+    </section>
+
+    <!-- Industry & Investment Section -->
+    <section id="industry-investment">
+      <h2 class="text-2xl font-bold mb-4">Industry & Investment Streams</h2>
+      <ul class="list-disc list-inside space-y-1">
+        <li><a href="https://news.ycombinator.com" target="_blank" class="text-indigo-700 hover:underline">Hacker News – AI tag</a></li>
+        <li><a href="https://www.producthunt.com/topics/artificial-intelligence" target="_blank" class="text-indigo-700 hover:underline">Product Hunt – AI</a></li>
+        <li><a href="https://www.techmeme.com/river?i=ai" target="_blank" class="text-indigo-700 hover:underline">Techmeme AI Stream</a></li>
+        <li><a href="https://www.cbinsights.com/research/report/generative-ai-startups" target="_blank" class="text-indigo-700 hover:underline">CB Insights – Gen AI Collection</a></li>
+      </ul>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section id="newsletters">
+      <h2 class="text-2xl font-bold mb-4">Newsletters</h2>
+      <ul class="list-disc list-inside space-y-1">
+        <li><a href="https://mindstream.ai" target="_blank" class="text-indigo-700 hover:underline">Mindstream</a></li>
+        <li><a href="https://www.therundown.ai" target="_blank" class="text-indigo-700 hover:underline">The Rundown AI</a></li>
+        <li><a href="https://www.forbes.com/sites/forbestechcouncil/" target="_blank" class="text-indigo-700 hover:underline">Forbes – AI Edge</a></li>
+        <li><a href="https://www.lennysnewsletter.com" target="_blank" class="text-indigo-700 hover:underline">Lenny’s Newsletter – AI column</a></li>
+        <li><a href="https://future.a16z.com" target="_blank" class="text-indigo-700 hover:underline">a16z Future</a></li>
+      </ul>
+    </section>
+
+    <!-- Growth & Monetization Section -->
+    <section id="growth-monetization">
+      <h2 class="text-2xl font-bold mb-4">Growth & Monetization</h2>
+      <ul class="list-disc list-inside space-y-1">
+        <li><a href="https://revenera.com/blog" target="_blank" class="text-indigo-700 hover:underline">Revenera Blog</a></li>
+        <li><a href="https://www.moesif.com/blog" target="_blank" class="text-indigo-700 hover:underline">Moesif Blog</a></li>
+        <li><a href="https://growthwithgary.com" target="_blank" class="text-indigo-700 hover:underline">Growth With Gary – AI PLG cases</a></li>
+        <li><a href="https://andrewchen.com" target="_blank" class="text-indigo-700 hover:underline">Andrew Chen</a></li>
+        <li><a href="https://growth.design" target="_blank" class="text-indigo-700 hover:underline">Growth.Design</a></li>
+      </ul>
+    </section>
+
+    <!-- Community Section -->
+    <section id="community">
+      <h2 class="text-2xl font-bold mb-4">Community & Live Discussion</h2>
+      <ul class="list-disc list-inside space-y-1">
+        <li><a href="https://www.reddit.com/r/MachineLearning/" target="_blank" class="text-indigo-700 hover:underline">Reddit – r/MachineLearning</a></li>
+        <li><a href="https://www.reddit.com/r/ArtificialIntelligence/" target="_blank" class="text-indigo-700 hover:underline">Reddit – r/ArtificialIntelligence</a></li>
+        <li><a href="https://latent.space" target="_blank" class="text-indigo-700 hover:underline">Latent Space Discord</a></li>
+        <li><a href="https://huggingface.co/chat" target="_blank" class="text-indigo-700 hover:underline">Hugging Face Community</a></li>
+        <li><a href="https://www.wandb.ai" target="_blank" class="text-indigo-700 hover:underline">Weights & Biases Slack</a></li>
+      </ul>
+    </section>
+
+    <!-- Update Workflow Section -->
+    <section id="workflow">
+      <h2 class="text-2xl font-bold mb-4">Weekly Update Workflow</h2>
+      <p class="mb-2">This page auto‑displays the current ISO week in the header. To refresh links once a week:</p>
+      <ol class="list-decimal list-inside space-y-1">
+        <li>Every Monday, clone or open <code>ai_intelligence_hub.html</code> in a code editor.</li>
+        <li>Replace outdated links / add new discoveries under the relevant sections.</li>
+        <li>Commit & push to your hosting (e.g., GitHub Pages, Vercel). The <code>lastUpdated</code> stamp updates automatically.</li>
+      </ol>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-200 py-4 text-center text-sm">© 2025 AI Intelligence Hub</footer>
+
+  <!-- ISO Week Script -->
+  <script>
+    // Calculate ISO week number
+    function getISOWeek(d) {
+      const date = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()));
+      const dayNum = date.getUTCDay() || 7; // Sunday = 7
+      date.setUTCDate(date.getUTCDate() + 4 - dayNum);
+      const yearStart = new Date(Date.UTC(date.getUTCFullYear(), 0, 1));
+      return Math.ceil(((date - yearStart) / 86400000 + 1) / 7);
+    }
+    const now = new Date();
+    const isoWeek = String(getISOWeek(now)).padStart(2, "0");
+    document.getElementById("lastUpdated").textContent = `${now.getFullYear()}‑W${isoWeek}`;
+  </script>
+</body>
+</html>
